@@ -21,3 +21,8 @@ Images and Icons: Use of SVG images (scooter.svg, social media icons) for scalab
 Accessibility: Links (<a>) styled with colors and hover states for better accessibility and user experience.
 
 Version Control: Linked CSS file (style.css) and external font resources are managed using relative paths and external links, ensuring clean and organized project structure.
+
+
+
+
+![Screenshot 2024-06-21 180539](https://github.com/arkh99/Frontend-landingpage/assets/124736009/f3a28e26-84ad-449c-a769-dd16d4079819)
