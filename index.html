@@ -3,59 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Fans Page</title>
+    <title>Dash - Drive with Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo/logo.png" alt="Dash Logo" class="logo">
+                <h1>Dash</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <div class="bc">
-          <img src="/images/logo/logo.png" alt="" class="logo">
-          <div class="content">
-            <div class="text_container text item">
-                <p class="large">Want to be<br>your own<br>boss?</p>
-                <p class="small">Start today and make up to 30$/hr driving your own vehicle with Dash!</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Want to be your own boss?</h2>
+                <p>Start driving with Dash and earn up to $30/hr!</p>
+                <a href="#" class="btn">Apply Now</a>
             </div>
-            <img src="/images/bg-image/scooter.svg" alt="Scooter" class="scooter">
-            <div class="form_container form item">
+            <img src="images/bg-image/scooter.svg" alt="Scooter" class="hero-image">
+        </section>
+
+        <section class="apply-form">
+            <div class="form-container">
                 <h2>Apply Now</h2>
-                <h3>Enter your info below to get started</h3>
                 <form action="#" method="post">
-                    <input type="text" name="Firtsname" placeholder="First Name" required>
-                    <input type="text" name="Lastname" placeholder="Last Name" required>
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name="number" placeholder="Phone number" required>
-                    </select><br><br>
-                        <input type="checkbox" name="check">
-                        <label for="check" class="loll"> I agree to dash terms</label>
-                    <input type="submit" value="Drive with us">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <label for="agree-check">
+                        <input type="checkbox" id="agree-check" name="agree" required>
+                        I agree to Dash's terms
+                    </label>
+                    <input type="submit" value="Drive with Us" class="btn">
                 </form>
-                <p class="message">Already applied? <a href="#">Chech your application status here</a></p>
+                <p class="message">Already applied? <a href="#">Check your application status here</a></p>
             </div>
-          </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <div class="footer_1">
-          <h3 class="footer_h2">See how much you can earn with Dash.</h3>
-          <h3 class="footer_h3">how many hours do you want to drive with us this week?</h3>
-          <div class="inputs">
-            <div class="inputs_1">
-              <input class="footer_in" type="text" placeholder="hours" required>
-              <input class="footer_in2" type="text" placeholder="city" required>
-            </div>
-            <div class="inputs_2">
-              <input class="footer_in3" type="submit" value="CALCULATE">
-            </div>
-          </div>
+        <div class="earn-estimate">
+            <h2>See how much you can earn with Dash.</h2>
+            <form action="#" method="get">
+                <input type="number" name="hours" placeholder="Hours" required>
+                <input type="text" name="city" placeholder="City" required>
+                <button type="submit" class="btn">Calculate</button>
+            </form>
         </div>
-        <div class="footer_2">
-          <img src="images/icons/facebook.svg" alt="">
-          <img src="images/icons/instagram.svg" alt="">
-          <img src="images/icons/linkedin.svg" alt="">
-          <img src="images/icons/twitter.svg" alt="">
+        <div class="social-icons">
+            <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/icons/twitter.svg" alt="Twitter"></a>
         </div>
     </footer>
 </body>
